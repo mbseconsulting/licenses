@@ -28,6 +28,11 @@ They are proprietary licences, not open source licences: they restrict redistrib
 fields of use. Some MBSE Consulting software is released under the Apache Licence 2.0 instead; those
 artifacts carry that licence in their own repositories.
 
+## Documentation
+
+[`docs/README.md`](docs/README.md) indexes the guide: how to apply a licence to a deliverable, how to
+publish a new version, the reference tables, and why a published version never changes.
+
 ## Contact
 
 Questions about licensing: [philippe.meurant@mbseconsulting.com](mailto:philippe.meurant@mbseconsulting.com)
