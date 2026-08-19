@@ -30,9 +30,11 @@ Fetch the notice:
 curl -O https://licenses.mbseconsulting.com/software/1.0-header.txt
 ```
 
-Paste it into the top of each source file, inside a comment syntax the file format supports. Replace
-`[yyyy]` with the year of first publication and `[name]` with the name of the product or deliverable.
-A Java file receives it as a block comment; an XML profile receives it inside `<!-- -->`.
+Paste it into the top of each source file, inside a comment syntax the file format supports. A Java
+file receives it as a block comment; an XML profile receives it inside `<!-- -->`.
+
+`[yyyy]` is the only placeholder. Replace it with the year of first publication. The notice names
+neither the file nor the product, so one text serves every file in the deliverable.
 
 Section 6.1(d) forbids any recipient from removing or altering the notice, so it travels with the
 file for as long as the file exists.
