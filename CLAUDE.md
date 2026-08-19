@@ -38,9 +38,12 @@ The header notice carries a version and a URL, so it is versioned alongside the 
 It reproduces the Appendix of the license verbatim; verify with:
 
 ```shell
-diff <(sed -n '/^      Copyright \[yyyy\]/,$p' software/1.0.txt | sed 's/^      //' | sed '/^$/d') \
-     <(sed '/^$/d' software/1.0-header.txt)
+diff <(sed -n '/Copyright \[yyyy\]/,$p' software/1.0.txt | sed 's/^ *//' | sed '/^$/d') \
+     <(sed 's/^ *//' software/1.0-header.txt | sed '/^$/d')
 ```
+
+Both sides strip leading whitespace, because the Appendix indents the notice within the license
+text while the standalone file does not.
 
 ## Publishing
 
