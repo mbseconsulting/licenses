@@ -1,7 +1,0 @@
-# Every change to this repository needs review from an owner.
-# The published licence texts are legal documents; the CNAME file binds the
-# custom domain that serves them.
-
-*               @philippe-meurant @nicolas-hadzinikitas
-/software/      @philippe-meurant @nicolas-hadzinikitas
-/CNAME          @philippe-meurant @nicolas-hadzinikitas
