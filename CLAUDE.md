@@ -61,6 +61,27 @@ curl -sI https://licenses.mbseconsulting.com/software/1.0.txt | head -3
 The response must carry `content-type: text/plain`. An HTML content type means the request reached
 the apex site rather than Pages.
 
+## Contributing
+
+`main` accepts no direct pushes, from anyone, including organisation owners. Every change reaches it
+through a pull request:
+
+```shell
+git switch -c <type>/<short-description>
+# edit, commit
+git push -u origin HEAD
+gh pr create --fill
+gh pr merge --squash --delete-branch
+```
+
+An owner may merge a pull request without a second approval, so the flow costs one command more than
+a direct push and leaves a reviewable record of every change to a published text. Squash is the only
+merge method the repository accepts. Force-pushing `main` and deleting it are blocked outright, with
+no bypass.
+
+The repository is public, so anyone may fork it and open a pull request. Nobody outside the
+organisation can push, merge, or run a workflow without an owner approving the run.
+
 ## Issuing a new version
 
 1. Copy the current text to `software/<new>.txt` and the notice to `software/<new>-header.txt`.
