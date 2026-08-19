@@ -1,0 +1,51 @@
+name: Bug report
+description: A defect in this project
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        A report is actionable when it names a concrete failure scenario. Describe what a user
+        sees, not only what the code does. A build that succeeds slowly, or reports green on a
+        crashed run, is a bug precisely because nothing signals a fault.
+
+  - type: textarea
+    id: what-happens
+    attributes:
+      label: What happens
+      description: The behaviour and where it originates. Name the class, task or module involved.
+    validations:
+      required: true
+
+  - type: textarea
+    id: failure-scenario
+    attributes:
+      label: Failure scenario
+      description: Concrete steps leading to a wrong outcome, and what the user observes.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: A minimal case and the exact command that triggers it.
+    validations:
+      required: false
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Versions, operating system, runtime.
+    validations:
+      required: true
+
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Logs, console output or a stack trace. Rendered as a code block, so no backticks are needed.
+      render: shell
+    validations:
+      required: false

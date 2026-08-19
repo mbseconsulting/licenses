@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "org": "mbseconsulting",
+  "issue": {
+    "bug": {
+      "requiredHeadings": ["What happens", "Failure scenario", "Environment"]
+    },
+    "feature": {
+      "requiredHeadings": ["Problem", "Proposed change", "Impact on users"]
+    }
+  },
+  "pr": {
+    "requiredHeadings": [
+      "What & why",
+      "The part worth reviewing closely",
+      "Testing",
+      "Impact on consumers",
+      "Not in scope",
+      "Checklist"
+    ],
+    "release": {
+      "titlePattern": "^chore\\(release\\): [0-9]+\\.[0-9]+\\.[0-9]+$",
+      "requiredHeadings": ["What & why"]
+    }
+  },
+  "commit": {
+    "types": ["feat", "fix", "docs", "chore", "refactor", "test", "build", "ci"],
+    "subjectPattern": "^(feat|fix|docs|chore|refactor|test|build|ci)(\\([a-z0-9.-]+\\))?!?: .+",
+    "enforce": true
+  },
+  "branch": {
+    "pattern": "^(feat|fix|docs|chore|refactor|test|build|ci)/[a-z0-9][a-z0-9._-]*$",
+    "enforce": true
+  },
+  "labels": [
+    { "name": "bug",          "color": "d73a4a", "description": "Something isn't working" },
+    { "name": "enhancement",  "color": "a2eeef", "description": "A change or addition to what the project does" },
+    { "name": "docs",         "color": "0075ca", "description": "Documentation only" },
+    { "name": "chore",        "color": "cfd3d7", "description": "Maintenance with no behaviour change" },
+    { "name": "blocked",      "color": "b60205", "description": "Waiting on something else" },
+    { "name": "needs-design", "color": "d4c5f9", "description": "Needs a design record before work starts" },
+    { "name": "duplicate",    "color": "cfd3d7", "description": "Already tracked elsewhere" },
+    { "name": "wontfix",      "color": "ffffff", "description": "Will not be worked on" }
+  ],
+  "repos": {
+    "exclude": [".conventions"]
+  },
+  "docs": {
+    "index": "docs/README.md",
+    "groups": ["tutorials", "how-to", "reference", "explanation"],
+    "pointers": {
+      "README.md": ["docs/README.md"],
+      "CLAUDE.md": [".claude/skills/"]
+    },
+    "records": {
+      "dir": "docs/superpowers",
+      "index": "docs/superpowers/README.md",
+      "archive": "docs/superpowers/archive",
+      "datePrefix": "^[0-9]{4}-[0-9]{2}-[0-9]{2}-",
+      "spec": {
+        "dir": "specs",
+        "suffix": "-design.md",
+        "states": ["Draft", "In review", "Approved", "Implemented", "Superseded"],
+        "terminal": ["Implemented", "Superseded"]
+      },
+      "plan": {
+        "dir": "plans",
+        "states": ["Draft", "Ready", "In progress", "Done", "Abandoned"],
+        "terminal": ["Done", "Abandoned"]
+      }
+    }
+  },
+  "managedFiles": [
+    ".github/ISSUE_TEMPLATE/bug_report.yml",
+    ".github/ISSUE_TEMPLATE/feature_request.yml",
+    ".github/ISSUE_TEMPLATE/config.yml",
+    ".github/PULL_REQUEST_TEMPLATE.md",
+    ".claude/settings.json",
+    ".claude/hooks/gh-guard.sh",
+    ".claude/conventions.json",
+    ".claude/skills/naming-commits-and-branches/SKILL.md",
+    ".claude/skills/opening-issues-and-prs/SKILL.md",
+    ".claude/skills/cutting-a-release/SKILL.md",
+    ".claude/skills/writing-documentation/SKILL.md",
+    ".claude/skills/recording-a-design-doc/SKILL.md"
+  ],
+  "retiredFiles": [
+    ".claude/CONVENTIONS.md",
+    ".claude/DOCUMENTATION.md"
+  ],
+  "release": {
+    "versionPattern": "^[0-9]+\\.[0-9]+\\.[0-9]+(-SNAPSHOT)?$",
+    "tagPattern": "^v[0-9]+\\.[0-9]+\\.[0-9]+$",
+    "snapshotSuffix": "-SNAPSHOT",
+    "notes": {
+      "requiredSections": ["Highlights", "What's changed", "Compatibility"],
+      "publishingSections": ["Install", "Download Link"]
+    },
+    "kinds": [
+      {
+        "name": "magic-forge",
+        "detect": { "file": "build.gradle.kts", "pattern": "^gradlePlugin[[:space:]]*\\{" },
+        "publishes": true,
+        "versionFile": "gradle.properties",
+        "versionLine": "^version=(.+)$",
+        "build": "./gradlew build",
+        "publish": "./gradlew publish"
+      },
+      {
+        "name": "magic-forge-consumer",
+        "detect": { "file": "build.gradle.kts", "pattern": "id\\(\"com\\.mbseconsulting\\.magicforge\"\\)" },
+        "publishes": true,
+        "versionFile": "gradle.properties",
+        "versionLine": "^com\\.mbseconsulting\\.magicforge\\.resource\\.humanVersion=(.+)$",
+        "build": "./gradlew build",
+        "publish": "./gradlew publishAll"
+      },
+      {
+        "name": "other",
+        "publishes": false
+      }
+    ]
+  }
+}
