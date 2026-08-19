@@ -1,0 +1,538 @@
+                   MBSE CONSULTING SOFTWARE LICENSE
+                       Version 1.0, August 2026
+
+          https://licenses.mbseconsulting.com/software/1.0.txt
+
+   TERMS AND CONDITIONS FOR USE AND DISTRIBUTION OF THE LICENSED MATERIAL
+
+
+   This License governs the products and the deliverables that MBSE
+   Consulting supplies to its clients. MBSE Consulting licenses that material
+   and retains ownership of it. This License grants perpetual rights, it does
+   not terminate, and it imposes no obligation on the models, data, or
+   documents that a licensee creates with the material.
+
+   This License states in full the terms on which a recipient holds the
+   Licensed Material. A recipient need not hold any other agreement with
+   Licensor to rely on it.
+
+
+1. Definitions.
+
+   "Licensor" means MBSE Consulting, the owner of the Licensed Material.
+
+   "Product" means material that Licensor develops for supply to more than one
+   client, and supplies to a Licensee in the form and version that Licensor
+   states, together with its accompanying notices and Documentation. A Product
+   may comprise several files of different kinds, including profiles, model
+   libraries, code, and archives, which together form one Product.
+
+   "Deliverable" means material that Licensor develops for a single Licensee
+   under an Engagement Contract, and delivers to that Licensee in the version
+   that Licensor states, together with its accompanying notices and
+   Documentation. A Deliverable may contain profiles, model libraries,
+   templates, samples, custom diagrams, perspectives, plugins, descriptors,
+   and any other asset that a modeling tool installs from it, in any
+   combination. A Deliverable may package one or more Products, and may
+   package material that a third party owns.
+
+   "Licensed Material" means the Products and the Deliverables.
+
+   "Source Form" means the preferred form of the Licensed Material for making
+   modifications to it, including source code, build scripts, and model files
+   that a modeling tool opens and edits directly.
+
+   "Documentation" means the user and technical documentation that Licensor
+   supplies with the Licensed Material.
+
+   "Engagement Contract" means the consulting agreement, statement of work,
+   order form, proposal, or other written agreement under which Licensor
+   supplies the Licensed Material to a Licensee.
+
+   "Licensee" means the legal entity to which Licensor supplies the Licensed
+   Material under an Engagement Contract.
+
+   "Group Entity" means an entity that Licensee controls, that controls
+   Licensee, or that stands under common control with Licensee, where control
+   means beneficial ownership of more than fifty percent of the voting shares.
+
+   "Programme Participant" means an entity that receives Licensed Material
+   from Licensee or from a Group Entity for the purpose of work that entity
+   performs for Licensee or for that Group Entity.
+
+   "Modification" means a change that Licensee makes to the Source Form of
+   Licensed Material, and any extension, addition, or correction that Licensee
+   makes to it.
+
+   "Client Model" means the models, data, documents, code, and other content
+   that Licensee creates using the Licensed Material, and any profile,
+   library, or other artifact that Licensee authors which references, extends,
+   or calls the Licensed Material without altering it. Client Model excludes
+   Modifications.
+
+   "Controlled Data" means information that falls in any category of the list
+   of controlled items of any applicable export control regulation, or that
+   stands subject to cybersecurity regulatory requirements on the information
+   technology systems used for its storage or transfer.
+
+   Whenever the context requires, the terms herein apply equally to the
+   singular and plural forms of the terms defined.
+
+
+2. Acceptance, Form of Grant, and Precedence.
+
+   2.1 Public grant. Licensor grants this License directly to every person who
+   lawfully receives Licensed Material, and not only to the Licensee that
+   first received it. A recipient accepts this License by installing, copying,
+   accessing, or using the Licensed Material. A recipient that does not accept
+   this License holds no right to install, copy, access, or use it.
+
+   2.2 Recipients other than Licensee. Where this License grants a right to
+   Licensee, a Group Entity or a Programme Participant holds that right to the
+   extent Section 4 states.
+
+   2.3 Precedence. Where Licensee and Licensor hold a separate written
+   agreement that governs the same subject matter, that agreement prevails
+   over this License to the extent of any conflict, and only as between
+   Licensor and that Licensee. This License continues to govern every other
+   recipient of the Licensed Material without alteration.
+
+   2.4 Products within a Deliverable. Where Licensor packages a Product with a
+   Deliverable, the terms of this License that apply to a Product govern that
+   Product. In particular, a permission to modify a Deliverable does not
+   extend to a Product packaged with it.
+
+   2.5 Business transaction. This License governs a transaction between
+   businesses. A recipient enters it for purposes relating to its trade,
+   business, craft, or profession, and it is not a consumer contract.
+
+
+3. Grant of License.
+
+   3.1 Scope. On payment in full of the amounts that the Engagement Contract
+   states, Licensor grants Licensee a perpetual, irrevocable, non-exclusive,
+   royalty-free, worldwide license to:
+
+   (a) install and use the Licensed Material, without limit on the number of
+       users, machines, or installations within Licensee and its Group
+       Entities;
+
+   (b) use the Licensed Material to create, read, edit, and maintain Client
+       Models, for as long as Licensee holds them. Where a Client Model
+       requires Licensed Material to be installed in order to be read or
+       edited, this right extends to installing and running that Licensed
+       Material for that purpose, without limit of time;
+
+   (c) modify the Licensed Material to the extent Section 7 permits; and
+
+   (d) reproduce and distribute the Licensed Material, in the form Licensor
+       supplied it or as Section 7 permits Licensee to modify it, as a
+       component of Client Models or of Licensee's own work, to the recipients
+       that Section 4 identifies.
+
+   3.2 Copies. Licensee may make any number of copies of the Licensed Material
+   that the rights in Section 3.1 require, including copies for backup and
+   disaster recovery. Every copy carries this License and all proprietary
+   notices unchanged.
+
+   3.3 Application is not modification. Applying the Licensed Material,
+   instantiating its stereotypes, invoking its interfaces, configuring it,
+   authoring a separate profile that references or specializes it, and
+   creating Client Models with it do not constitute modification of the
+   Licensed Material under Section 6 or Section 7.
+
+   3.4 Versions. This License covers the version of the Licensed Material that
+   Licensor supplied. Licensor owes no obligation to supply any later version.
+   Where Licensor supplies a later version, the license that Licensor
+   publishes for that version governs it.
+
+   3.5 Patents. Licensor grants Licensee, its Group Entities, and Programme
+   Participants a perpetual, irrevocable, non-exclusive, royalty-free license
+   under every patent claim that Licensor owns or controls and that the
+   Licensed Material as supplied necessarily infringes, to exercise the rights
+   that Section 3.1 grants. Licensor shall not assert any such claim against a
+   recipient in respect of that exercise.
+
+
+4. Extension to Group Entities and Programme Participants.
+
+   4.1 Group Entities. Every Group Entity holds the rights in Section 3.1 on
+   the same terms as Licensee. Licensee remains responsible for each Group
+   Entity's compliance with this License.
+
+   4.2 Programme Participants. Every Programme Participant holds the rights in
+   Sections 3.1(a) and 3.1(b), and holds the right in Section 3.1(d) to the
+   extent distribution serves the work it performs for Licensee, provided that
+   the Programme Participant uses the Licensed Material only for that work.
+
+   4.3 Limit. This Section grants no right to distribute Licensed Material to
+   any person other than a Group Entity or a Programme Participant. This
+   Section does not restrict the distribution of Client Models, which
+   Section 5 governs.
+
+
+5. Ownership of Licensed Material and Client Models.
+
+   5.1 Licensed Material. Licensor licenses the Licensed Material and does not
+   sell it. Licensor and its licensors retain all right, title, and interest
+   in and to the Licensed Material, the Documentation, and every intellectual
+   property right in them, in every version that Licensor supplies. Licensor
+   reserves every right that this License does not expressly grant. Licensee
+   acquires no right in Licensor's trademarks, service marks, or trade names.
+
+   5.2 Client Models. Licensee owns every Client Model outright. Licensor
+   claims no right, title, or interest in any Client Model, and asserts no
+   obligation over it by reason of the Licensed Material that it applies,
+   references, calls, or depends on. Licensee may use, modify, license, and
+   distribute Client Models without restriction under this License, and
+   without notice to Licensor. Where a Client Model contains Licensed
+   Material, that Licensed Material remains subject to this License; the
+   remainder of the Client Model does not.
+
+   5.3 No responsibility for Client Models. Licensor exercises no control over
+   Client Models and assumes no responsibility or liability for them, for
+   their content, or for any decision that any person takes on the basis of
+   them.
+
+   5.4 Feedback. Where a recipient supplies Licensor with a suggestion, an
+   enhancement request, or other feedback concerning the Licensed Material,
+   Licensor may use and exploit that feedback without restriction and without
+   obligation to that recipient.
+
+
+6. Restrictions.
+
+   6.1 General. Except as Section 3, Section 7, or Section 12 expressly
+   permits, a recipient shall not, and shall not permit any other person to:
+
+   (a) modify, adapt, translate, or create derivative works of the Licensed
+       Material;
+
+   (b) reverse engineer, decompile, or disassemble the Licensed Material, or
+       otherwise attempt to derive its Source Form from an object-code form;
+
+   (c) distribute, publish, sell, rent, lease, lend, sublicense, or otherwise
+       transfer the Licensed Material other than under Sections 3.1(d) and 4;
+
+   (d) remove, obscure, or alter any copyright, trademark, license, or other
+       proprietary notice in or on the Licensed Material;
+
+   (e) use the Licensed Material, or information derived from it, to develop
+       an artifact intended to substitute for or compete with it; or
+
+   (f) use the Licensed Material to develop, deliver, or maintain a modeling
+       framework, or to provide framework development services, for any person
+       other than Licensee, its Group Entities, and, in the case of a
+       Programme Participant, the Licensee for which it performs work.
+
+   6.2 Material-specific terms. The Engagement Contract states any term
+   specific to an item of Licensed Material, in addition to or in variation of
+   this Section.
+
+   6.3 Mandatory law. Nothing in this Section restricts an act that mandatory
+   applicable law permits and does not allow a contract to exclude, including
+   decompilation for interoperability under Article 6 of Directive 2009/24/EC
+   and equivalent provisions of the law of other jurisdictions. Before
+   exercising such a right, the recipient shall request the interoperability
+   information it needs from Licensor, and Licensor shall supply that
+   information on reasonable terms within a reasonable time.
+
+
+7. Modifications, Extensions, and Interfaces.
+
+   7.1 Deliverables. Where Licensor supplies a Deliverable, or a part of a
+   Deliverable, to Licensee in Source Form, Licensee may make Modifications to
+   it for the purpose of using and maintaining it for Licensee, its Group
+   Entities, and its Programme Participants. Section 6.1(a) does not apply to
+   that material to that extent.
+
+   7.2 Products, and material supplied in object-code form. Licensee shall not
+   modify a Product, in whatever form Licensor supplies it, and shall not
+   modify any part of a Deliverable that Licensor supplies only in object-code
+   form. Licensee shall run such material at the version that Licensor
+   supplied. This Section applies to a Product whose files a modeling tool
+   opens and edits directly, including a profile, as it applies to a Product
+   supplied in object-code form.
+
+   7.3 Ownership of Modifications. Licensee owns the Modifications that it
+   makes. A Modification exists only as a modification of Licensed Material
+   that Licensor owns. Licensee may therefore use and distribute a
+   Modification only as part of the Licensed Material and under this License,
+   and shall not extract, distribute, sublicense, or otherwise exploit a
+   Modification separately from the Licensed Material. Licensor acquires no
+   right in a Modification, and may not use a Modification without Licensee's
+   consent.
+
+   7.4 Restrictions travel. Section 6 applies to Licensed Material as
+   modified, on the same terms as it applies to the Licensed Material that
+   Licensor supplied.
+
+   7.5 Extension by a separate artifact. Nothing in this Section restricts
+   Licensee from authoring its own profile, library, or other artifact that
+   references the Licensed Material, or that defines elements generalizing or
+   specializing its stereotypes, in the manner in which the Licensed Material
+   itself extends the modeling language it builds on, provided that Licensee
+   does not alter the Licensed Material. Such an artifact is a Client Model,
+   and Section 5.2 governs it. Where that artifact depends on the Licensed
+   Material, a recipient of the artifact requires the Licensed Material under
+   this License in order to use it.
+
+   7.6 Interfaces. Licensee may develop code and model content that calls the
+   documented interfaces of the Licensed Material. Such code and content is a
+   Client Model, and Section 5.2 governs it. Code does not become a
+   Modification, or a derivative work of the Licensed Material, by reason of
+   calling its interfaces or linking against it.
+
+   7.7 No support for modified material. Licensor owes no obligation in
+   respect of Licensed Material that Licensee has modified, and Section 15
+   applies to it without qualification.
+
+
+8. Attribution.
+
+   Every recipient shall preserve, in every copy and in every distribution of
+   Licensed Material, this License, every notice in the source or header of a
+   file within the Licensed Material, and the content of any NOTICE file that
+   accompanies it. Licensee may state in a Client Model that the Client Model
+   depends on the Licensed Material. This License grants no other right in
+   Licensor's trademarks, service marks, or trade names.
+
+
+9. Third-Party Material.
+
+   Licensed Material may incorporate or be distributed with material that a
+   third party owns, including any archive placed on the runtime classpath of
+   a plugin. Where Licensor supplies such material, Licensor identifies it and
+   its license terms in the material that accompanies the Licensed Material.
+   Those license terms govern that material and prevail over this License to
+   the extent of any conflict. Licensor grants no rights in third-party
+   material beyond what those terms grant, and disclaims all warranties and
+   liability for it.
+
+
+10. No Confidentiality Obligation.
+
+   This License imposes no confidentiality obligation on the Licensed
+   Material, on its structure or organization, or on the Documentation. This
+   Section does not affect any confidentiality obligation that an Engagement
+   Contract or a separate agreement imposes on other material.
+
+
+11. No Support Obligation.
+
+   This License grants no right to support, maintenance, defect correction,
+   updates, or new versions. Licensor supplies those only where an Engagement
+   Contract or a separate agreement states so, and on the terms it states.
+
+
+12. Source Release.
+
+   12.1 Trigger. A Release Event occurs where Licensor enters insolvency,
+   liquidation, or an equivalent proceeding, where Licensor is dissolved, or
+   where Licensor gives Licensee written notice that it discontinues an item
+   of Licensed Material.
+
+   12.2 Effect. On a Release Event, Licensor shall supply Licensee, on written
+   request, with the Source Form of the affected Licensed Material and with
+   the build instructions that a competent engineer requires to compile it.
+   Licensee may then modify that Licensed Material for the purpose of
+   maintaining it, and Sections 6.1(a), 6.1(b), and 7.2 cease to apply to it
+   to that extent.
+
+   12.3 Scope. Section 12.2 grants no right to distribute the Source Form of
+   Licensed Material, or a Modification of it, other than under Sections
+   3.1(d) and 4. Sections 6.1(c), 6.1(d), 6.1(e), and 6.1(f), Section 7.3, and
+   Section 8 continue to apply.
+
+   12.4 Replacement. Where Licensor discontinues an item of Licensed Material
+   and supplies a replacement under a later Engagement Contract, Licensee may
+   exercise Section 12.2 in respect of the discontinued item whether or not it
+   takes the replacement.
+
+
+13. Export Control and Sanctions.
+
+   Every recipient shall comply with all applicable export control, import,
+   and sanctions laws, including Regulation (EU) 2021/821 and the sanctions
+   regulations of the European Union and of any other jurisdiction that
+   applies. No recipient shall export, re-export, transfer, or make Licensed
+   Material available to any person, entity, or destination that those laws
+   restrict, or use Licensed Material for any prohibited end use.
+
+   Unless a separate agreement provides for it, neither Licensor nor any
+   recipient shall disclose or exchange Controlled Data with the other. A
+   recipient shall not include Controlled Data in any material it submits to
+   Licensor, including any model, log, or file submitted with a defect report.
+
+
+14. Disclaimer of Warranty.
+
+   THE LICENSED MATERIAL IS PROVIDED "AS IS", WITHOUT WARRANTY OR CONDITION OF
+   ANY KIND, WHETHER EXPRESS, IMPLIED, OR STATUTORY. LICENSOR DISCLAIMS ALL
+   IMPLIED WARRANTIES AND CONDITIONS OF MERCHANTABILITY, FITNESS FOR A
+   PARTICULAR PURPOSE, TITLE, ACCURACY, AND NON-INFRINGEMENT. LICENSOR DOES
+   NOT WARRANT THAT THE LICENSED MATERIAL WILL OPERATE UNINTERRUPTED OR
+   ERROR-FREE, THAT IT WILL MEET ANY RECIPIENT'S REQUIREMENTS, OR THAT IT WILL
+   INTEROPERATE WITH ANY PARTICULAR VERSION OF ANY THIRD-PARTY SOFTWARE.
+
+   EVERY RECIPIENT BEARS SOLE RESPONSIBILITY FOR DETERMINING THE SUITABILITY
+   OF THE LICENSED MATERIAL FOR ITS PURPOSES, FOR VALIDATING ANY MODEL,
+   ANALYSIS, OR RESULT THAT IT PRODUCES WITH THE LICENSED MATERIAL, AND FOR
+   ANY DECISION IT TAKES ON THE BASIS OF THAT RESULT.
+
+   This Section does not affect any warranty that an Engagement Contract
+   states in respect of the services that Licensor performs.
+
+
+15. Limitation of Liability.
+
+   15.1 Excluded loss. TO THE MAXIMUM EXTENT PERMITTED BY LAW, LICENSOR SHALL
+   NOT BE LIABLE FOR ANY INDIRECT, SPECIAL, INCIDENTAL, PUNITIVE, OR
+   CONSEQUENTIAL LOSS, NOR FOR ANY LOSS OF PROFIT, REVENUE, BUSINESS,
+   ANTICIPATED SAVING, DATA, OR GOODWILL, ARISING OUT OF OR IN CONNECTION WITH
+   THIS LICENSE OR THE LICENSED MATERIAL, WHETHER IN CONTRACT, TORT, OR
+   OTHERWISE, AND WHETHER OR NOT LICENSOR WAS ADVISED OF THE POSSIBILITY OF
+   THAT LOSS.
+
+   15.2 Cap. TO THE MAXIMUM EXTENT PERMITTED BY LAW, LICENSOR'S TOTAL
+   AGGREGATE LIABILITY ARISING OUT OF OR IN CONNECTION WITH THIS LICENSE AND
+   THE LICENSED MATERIAL SHALL NOT EXCEED FIFTY THOUSAND EUROS PER ENGAGEMENT
+   CONTRACT. THAT AMOUNT IS A SINGLE AGGREGATE LIMIT FOR ALL CLAIMS BY
+   LICENSEE, ITS GROUP ENTITIES, AND ITS PROGRAMME PARTICIPANTS TOGETHER,
+   WHENEVER THE EVENT GIVING RISE TO A CLAIM OCCURS. THE EXISTENCE OF MULTIPLE
+   CLAIMS OR MULTIPLE CLAIMANTS DOES NOT ENLARGE IT. NO ITEM OF LICENSED
+   MATERIAL NEED CARRY A SEPARATE PRICE FOR THIS SECTION TO APPLY.
+
+   15.3 Single cap. Where the Engagement Contract states a limit on Licensor's
+   liability, that limit and the limit in Section 15.2 form one aggregate
+   limit, not two. Amounts recovered under either count toward both.
+
+   15.4 Carve-out. Nothing in this License excludes or limits any party's
+   liability for death or personal injury caused by negligence, for fraud or
+   fraudulent misrepresentation, for gross negligence or wilful misconduct, or
+   for any other liability that law does not permit a contract to exclude or
+   limit.
+
+   15.5 No limit on recipient obligations. This Section limits Licensor's
+   liability only. It does not limit any recipient's liability under Section
+   6, Section 7, Section 8, or Section 13, or any payment obligation under an
+   Engagement Contract.
+
+   15.6 No double recovery. Where the same facts give rise to liability under
+   both this License and another agreement between the parties, a recipient
+   may not recover more than once for the same loss.
+
+   15.7 Allocation of risk. The parties agree that the disclaimer in Section
+   14 and the limitations in this Section allocate risk between them, that
+   they reflect the terms on which Licensor supplies the Licensed Material,
+   and that they apply even where a limited remedy fails of its essential
+   purpose.
+
+
+16. No Termination.
+
+   16.1 The rights in Sections 3.1(a), 3.1(b), and 3.1(c) are irrevocable and
+   do not terminate, whether for breach of this License, on expiry or
+   termination of an Engagement Contract, or otherwise. Licensor retains its
+   remedies in damages and in injunctive relief for any breach.
+
+   16.2 Where a recipient materially breaches Section 6, Section 7, or Section
+   8, Licensor may suspend that recipient's right under Section 3.1(d) on
+   written notice. The suspension ends when the recipient remedies the breach.
+   A suspension does not affect any other recipient.
+
+   16.3 Sections 5 through 19 survive any suspension under Section 16.2 and
+   any expiry or termination of an Engagement Contract.
+
+
+17. Governing Law and Jurisdiction.
+
+   17.1 Governing law. The laws of the Hellenic Republic govern this License
+   and any dispute or claim arising out of or in connection with it, including
+   any non-contractual dispute or claim, excluding its conflict-of-laws rules
+   and excluding the United Nations Convention on Contracts for the
+   International Sale of Goods.
+
+   17.2 Jurisdiction. The courts of Athens, Greece hold exclusive jurisdiction
+   over any dispute arising out of or in connection with this License. The
+   parties intend this Section as an exclusive choice of court agreement
+   within the meaning of the Hague Convention of 30 June 2005 on Choice of
+   Court Agreements.
+
+   17.3 Arbitration. Licensor and a Licensee may agree in writing, in an
+   Engagement Contract or otherwise, that arbitration replaces Section 17.2 as
+   between them. That agreement binds the Group Entities and Programme
+   Participants of that Licensee.
+
+   17.4 Injunctive relief. Section 17.2 does not prevent Licensor from seeking
+   injunctive or other interim relief in any court of competent jurisdiction
+   to protect its intellectual property.
+
+
+18. General.
+
+   18.1 Entire agreement. This License, together with the third-party terms
+   that Section 9 identifies, states the entire agreement between Licensor and
+   each recipient on the rights in the Licensed Material. Section 2.3 governs
+   any conflict with an Engagement Contract.
+
+   18.2 Assignment. A recipient may transfer its rights under this License
+   only together with the Client Models to which they relate, and only to a
+   successor to the business or the assets of which those Client Models form
+   part, on written notice to Licensor. Any other assignment, novation, or
+   transfer requires Licensor's prior written consent, and any attempt to do
+   so without that consent is void. Licensor may assign this License to a
+   Group Entity of Licensor or to a successor to its business or assets.
+
+   18.3 No waiver. A party's failure or delay in exercising a right under this
+   License does not waive that right, and a single or partial exercise does
+   not prevent any further exercise.
+
+   18.4 Severability. Where a court holds a provision of this License invalid
+   or unenforceable, that provision applies to the maximum extent the law
+   permits and the remaining provisions continue in full force.
+
+   18.5 Notices. A notice under this License takes effect when delivered in
+   writing to the address the Engagement Contract states, or, absent an
+   Engagement Contract, to the contact address that Licensor publishes.
+
+   18.6 Force majeure. Neither party bears liability for a failure to perform,
+   other than a payment obligation, caused by an event beyond its reasonable
+   control.
+
+   18.7 Language. The English text of this License governs. A translation
+   serves convenience only.
+
+
+19. Identification of Licensed Material.
+
+   Licensor identifies each item of Licensed Material, its version, and
+   whether it is a Product or a Deliverable, in the material that accompanies
+   it. Licensor records the version of every item of Licensed Material that it
+   supplies to a Licensee in the delivery record for the Engagement Contract.
+   The version so recorded is the version that Section 3.4 covers and, where
+   Section 7.1 permits Modifications, the baseline from which a Modification
+   is measured.
+
+   END OF TERMS AND CONDITIONS
+
+
+   APPENDIX: FILE HEADER NOTICE
+
+   Licensor attaches the following notice to files within the Licensed
+   Material, inside a comment syntax that the file format supports. Section
+   6.1(d) requires every recipient to preserve it.
+
+       Copyright [yyyy] MBSE Consulting. All rights reserved.
+
+       Licensed under the MBSE Consulting Software License, Version 1.0
+       (LicenseRef-mbseconsulting-software-1.0). This material is licensed,
+       not sold. You may obtain a copy of the License at
+
+           https://licenses.mbseconsulting.com/software/1.0.txt
+
+       Unless required by applicable law or agreed to in writing, this
+       material is provided on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+       CONDITIONS OF ANY KIND, either express or implied. See the License
+       for the specific terms governing use, modification, distribution,
+       and limitation of liability.
