@@ -5,61 +5,26 @@ repository.
 
 ## What this project is
 
-This repository publishes the license texts under which MBSE Consulting supplies its software. It is
-public. It contains no code and no build: GitHub Pages serves the repository root, so each file
+This repository publishes the licence texts under which MBSE Consulting supplies its software. It is
+public, and it contains no code and no build. GitHub Pages serves the repository root, so each file
 resolves at the path it occupies.
 
-Delivered artifacts carry the URL of the applicable text in their file headers, and bills of
-materials record the matching `LicenseRef-` identifier. Those strings leave the building and cannot
-be recalled.
+[`docs/README.md`](docs/README.md) indexes the guide. Read
+[Repository layout](docs/reference/repository-layout.md) for the paths and the protection settings,
+and [Published licences](docs/reference/published-licences.md) for the versions and their text
+conventions.
 
 ## The rule that governs every change
 
 **A published version is immutable.** Never edit the text of a version that has been published, not
-for a typographical fix and not for a clarification. Section 3.4 of the license binds each recipient
-to the version supplied, and earlier paths must keep resolving to the text that governed the
-delivery they document.
+for a typographical fix and not for a clarification. Delivered material carries the URL in its file
+headers, and Section 3.4 of the licence binds each recipient to the version supplied.
 
-Treat any request to fix, improve, or update a license under an existing version number as a request
-for a new version, and say so before editing anything.
-
-## Layout
-
-One file per version, at the path that forms its URL. No directories per version, no HTML rendering,
-no redirects: the URL is a file path and stays valid under any static host.
-
-| File | URL | Role |
-|---|---|---|
-| `software/1.0.txt` | `https://licenses.mbseconsulting.com/software/1.0.txt` | The license text. |
-| `software/1.0-header.txt` | same directory | The file header notice, for pasting into source files. |
-| `CNAME` | — | Binds the GitHub Pages site to the custom domain. |
-
-The header notice carries a version and a URL, so it is versioned alongside the text it belongs to.
-It reproduces the Appendix of the license verbatim; verify with:
-
-```shell
-diff <(sed -n '/Copyright \[yyyy\]/,$p' software/1.0.txt | sed 's/^ *//' | sed '/^$/d') \
-     <(sed 's/^ *//' software/1.0-header.txt | sed '/^$/d')
-```
-
-Both sides strip leading whitespace, because the Appendix indents the notice within the license
-text while the standalone file does not.
-
-## Publishing
-
-GitHub Pages deploys `main` from the repository root. The `CNAME` file binds the site to
-`licenses.mbseconsulting.com`, which requires a matching DNS record at the registrar:
-`licenses CNAME mbseconsulting.github.io`. Squarespace serves the apex domain and cannot host these
-texts itself, because it assigns uploaded files a CDN URL that cannot be chosen or kept stable.
-
-Check a deployment with:
-
-```shell
-curl -sI https://licenses.mbseconsulting.com/software/1.0.txt | head -3
-```
-
-The response must carry `content-type: text/plain`. An HTML content type means the request reached
-the apex site rather than Pages.
+Treat any request to fix, improve, or update a licence under an existing version number as a request
+for a new version, and say so before editing anything. Follow
+[Publish a new licence version](docs/how-to/publish-a-new-version.md).
+[Why a published version never changes](docs/explanation/immutable-versions.md) carries the
+reasoning.
 
 ## Contributing
 
@@ -82,23 +47,43 @@ no bypass.
 The repository is public, so anyone may fork it and open a pull request. Nobody outside the
 organisation can push, merge, or run a workflow without an owner approving the run.
 
-## Issuing a new version
+## Verifying a change
 
-1. Copy the current text to `software/<new>.txt` and the notice to `software/<new>-header.txt`.
-2. Inside both files, update the version, the `LicenseRef-mbseconsulting-software-<new>` identifier,
-   the date, and the URL. Each text states its own URL twice: in the banner and in the Appendix.
-3. Leave every earlier file untouched.
-4. Add the row to the README table. Earlier rows stay, so that an old identifier still resolves.
+[Verify a published text](docs/how-to/verify-a-published-text.md) covers the deployment, the content
+type, and the DNS failure that looks like an outage. Confirm a notice against its licence text with:
 
-## Text conventions
+```shell
+diff <(sed -n '/Copyright \[yyyy\]/,$p' software/1.0.txt | sed 's/^ *//' | sed '/^$/d') \
+     <(sed 's/^ *//' software/1.0-header.txt | sed '/^$/d')
+```
 
-The license text wraps at 79 columns, indents body text by three spaces, centres the banner on
-column 35, and uses no characters outside ASCII. Preserve that formatting. Reflowing a paragraph
-changes what the published text shows to a recipient who fetched it earlier.
+Both sides strip leading whitespace, because the appendix indents the notice within the licence text
+while the standalone file does not.
+
+## Documentation and conventions
+
+`docs/` documents this repository, organised by what the reader is doing. A page belongs to one
+group; add a page by following the `writing-documentation` skill rather than by extending an existing
+page.
 
 ## Organization conventions
 
-The shared `mbseconsulting` conventions ship as skills from
-[mbseconsulting/.conventions](https://github.com/mbseconsulting/.conventions). This repository is not
-yet enrolled in that sync, so `.claude/skills/` is absent. The conventions still apply to commit
-names, branch names, issues, and pull requests here.
+The shared `mbseconsulting` conventions ship as skills in [`.claude/skills/`](.claude/skills/).
+Invoke the one that matches what you are doing, rather than reading them all:
+
+| Doing this | Use |
+|---|---|
+| Writing a commit, branch or pull-request title | `naming-commits-and-branches` |
+| Opening an issue or a pull request | `opening-issues-and-prs` |
+| Releasing, publishing or bumping a version | `cutting-a-release` |
+| Adding or moving a page under `docs/` | `writing-documentation` |
+| Writing or closing a spec or plan | `recording-a-design-doc` |
+
+Those skills are generated, as are the templates under `.github/`. Edit them in
+[mbseconsulting/.conventions](https://github.com/mbseconsulting/.conventions), never here, because a
+sync overwrites local changes.
+
+A `PreToolUse` hook at `.claude/hooks/gh-guard.sh` blocks a `gh issue create` or `gh pr create` whose
+body omits a required section. Write the body to an **absolute literal path** and pass `--body-file`;
+the hook reads the command before the shell expands it, so `$(mktemp)` or `"$TMPDIR/body.md"` is
+denied even when the file exists.
