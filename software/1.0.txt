@@ -115,7 +115,11 @@
 
    (a) install and use the Licensed Material, without limit on the number of
        users, machines, or installations within Licensee and its Group
-       Entities;
+       Entities. This right includes hosting a copy of the Licensed Material
+       in an artifact repository operated by or on behalf of Licensee,
+       provided that access to that copy is limited to Licensee, its Group
+       Entities, and its Programme Participants, and that the copy carries
+       this License and all accompanying notices unchanged;
 
    (b) use the Licensed Material to create, read, edit, and maintain Client
        Models, for as long as Licensee holds them. Where a Client Model
@@ -523,7 +527,7 @@
    Material, inside a comment syntax that the file format supports. Section
    6.1(d) requires every recipient to preserve it.
 
-       Copyright [yyyy] MBSE Consulting. All rights reserved.
+       Copyright $YEAR MBSE Consulting. All rights reserved.
 
        Licensed under the MBSE Consulting Software License, Version 1.0
        (LicenseRef-mbseconsulting-software-1.0). This material is licensed,
