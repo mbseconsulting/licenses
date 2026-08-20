@@ -343,12 +343,20 @@
    maintaining it, and Sections 6.1(a), 6.1(b), and 7.2 cease to apply to it
    to that extent.
 
-   12.3 Scope. Section 12.2 grants no right to distribute the Source Form of
+   12.3 Time limit. Where the Release Event is Licensor's insolvency,
+   liquidation, an equivalent proceeding, or dissolution, Licensee shall make
+   its request within twelve months after the later of the occurrence of that
+   event and the date on which it is published, registered, or notified to
+   Licensee in writing. A request made after that period does not oblige
+   Licensor to supply the Source Form. No time limit applies where the Release
+   Event is Licensor's notice of discontinuation.
+
+   12.4 Scope. Section 12.2 grants no right to distribute the Source Form of
    Licensed Material, or a Modification of it, other than under Sections
    3.1(d) and 4. Sections 6.1(c), 6.1(d), 6.1(e), and 6.1(f), Section 7.3, and
    Section 8 continue to apply.
 
-   12.4 Replacement. Where Licensor discontinues an item of Licensed Material
+   12.5 Replacement. Where Licensor discontinues an item of Licensed Material
    and supplies a replacement under a later Engagement Contract, Licensee may
    exercise Section 12.2 in respect of the discontinued item whether or not it
    takes the replacement.
@@ -400,12 +408,19 @@
 
    15.2 Cap. TO THE MAXIMUM EXTENT PERMITTED BY LAW, LICENSOR'S TOTAL
    AGGREGATE LIABILITY ARISING OUT OF OR IN CONNECTION WITH THIS LICENSE AND
-   THE LICENSED MATERIAL SHALL NOT EXCEED FIFTY THOUSAND EUROS PER ENGAGEMENT
-   CONTRACT. THAT AMOUNT IS A SINGLE AGGREGATE LIMIT FOR ALL CLAIMS BY
-   LICENSEE, ITS GROUP ENTITIES, AND ITS PROGRAMME PARTICIPANTS TOGETHER,
-   WHENEVER THE EVENT GIVING RISE TO A CLAIM OCCURS. THE EXISTENCE OF MULTIPLE
-   CLAIMS OR MULTIPLE CLAIMANTS DOES NOT ENLARGE IT. NO ITEM OF LICENSED
-   MATERIAL NEED CARRY A SEPARATE PRICE FOR THIS SECTION TO APPLY.
+   THE LICENSED MATERIAL SHALL NOT EXCEED THE LOWER OF
+
+   (A) THE AMOUNT, EXCLUDING TAXES, ACTUALLY PAID TO LICENSOR UNDER THE
+   ENGAGEMENT CONTRACT UNDER WHICH LICENSOR SUPPLIED THE LICENSED MATERIAL;
+   AND
+
+   (B) TWENTY THOUSAND EUROS.
+
+   THAT AMOUNT IS A SINGLE AGGREGATE LIMIT FOR ALL CLAIMS BY LICENSEE, ITS
+   GROUP ENTITIES, AND ITS PROGRAMME PARTICIPANTS TOGETHER, WHENEVER THE
+   EVENT GIVING RISE TO A CLAIM OCCURS. THE EXISTENCE OF MULTIPLE CLAIMS OR
+   MULTIPLE CLAIMANTS DOES NOT ENLARGE IT. NO ITEM OF LICENSED MATERIAL NEED
+   CARRY A SEPARATE PRICE FOR THIS SECTION TO APPLY.
 
    15.3 Single cap. Where the Engagement Contract states a limit on Licensor's
    liability, that limit and the limit in Section 15.2 form one aggregate
