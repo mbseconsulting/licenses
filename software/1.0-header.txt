@@ -1,4 +1,4 @@
-Copyright [yyyy] MBSE Consulting. All rights reserved.
+Copyright $YEAR MBSE Consulting. All rights reserved.
 
 Licensed under the MBSE Consulting Software License, Version 1.0
 (LicenseRef-mbseconsulting-software-1.0). This material is licensed,

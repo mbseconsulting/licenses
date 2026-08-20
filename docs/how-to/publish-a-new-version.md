@@ -36,7 +36,7 @@ whitespace exactly.
 The standalone notice reproduces the appendix of the licence. Confirm they agree:
 
 ```shell
-diff <(sed -n '/Copyright \[yyyy\]/,$p' software/<new>.txt | sed 's/^ *//' | sed '/^$/d') \
+diff <(sed -n '/Copyright $YEAR/,$p' software/<new>.txt | sed 's/^ *//' | sed '/^$/d') \
      <(sed 's/^ *//' software/<new>-header.txt | sed '/^$/d')
 ```
 

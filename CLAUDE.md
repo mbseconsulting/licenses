@@ -53,7 +53,7 @@ organisation can push, merge, or run a workflow without an owner approving the r
 type, and the DNS failure that looks like an outage. Confirm a notice against its licence text with:
 
 ```shell
-diff <(sed -n '/Copyright \[yyyy\]/,$p' software/1.0.txt | sed 's/^ *//' | sed '/^$/d') \
+diff <(sed -n '/Copyright $YEAR/,$p' software/1.0.txt | sed 's/^ *//' | sed '/^$/d') \
      <(sed 's/^ *//' software/1.0-header.txt | sed '/^$/d')
 ```
 
