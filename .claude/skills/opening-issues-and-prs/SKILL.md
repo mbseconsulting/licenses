@@ -1,6 +1,6 @@
 ---
 name: opening-issues-and-prs
-description: Writes the body of a GitHub issue or pull request to the mbseconsulting conventions. Use before running gh issue create or gh pr create, when a PreToolUse hook denies either call, and whenever the user asks to open, file, or raise an issue or a pull request.
+description: Writes the body of a GitHub issue or pull request to the mbseconsulting conventions, and prunes the branch once the pull request merges. Use before running gh issue create or gh pr create, when a PreToolUse hook denies either call, whenever the user asks to open, file, or raise an issue or a pull request, and before or after running gh pr merge.
 metadata:
   version: 1.0.0
   source: mbseconsulting/.conventions
@@ -67,3 +67,27 @@ against the bug and feature shapes.
 A repository that cuts releases carries a one-line release note in the pull request's checklist,
 which feeds the release notes. The line applies whether or not the repository publishes an artifact
 to Nexus. Delete it in a repository that releases nothing.
+
+## After the merge
+
+Every repository sets **Automatically delete head branches**, so GitHub deletes the remote branch the
+moment the pull request merges. The local clone keeps its own copy and a stale `origin/` reference.
+Merge through `gh` and it cleans both sides:
+
+    gh pr merge --squash --delete-branch
+
+`--delete-branch` switches back to the default branch, then deletes the local branch as well as the
+remote one.
+
+A pull request merged in the browser leaves the local side untouched. Prune it by hand:
+
+    git switch main
+    git pull --prune
+    git branch -D fix/codegen-classpath
+
+`-D`, not `-d`. A squash merge lands one new commit on `main`, so the branch tip never becomes an
+ancestor of it and `-d` reads the branch as unmerged. Confirm the pull request merged, then force the
+deletion.
+
+`git config --global fetch.prune true` makes every fetch drop the stale reference, so the `--prune`
+above becomes redundant.
