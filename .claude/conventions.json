@@ -98,7 +98,7 @@
     },
     "kinds": [
       {
-        "name": "magic-forge",
+        "name": "forge",
         "detect": { "file": "build.gradle.kts", "pattern": "^gradlePlugin[[:space:]]*\\{" },
         "publishes": true,
         "versionFile": "gradle.properties",
@@ -107,11 +107,11 @@
         "publish": "./gradlew publish"
       },
       {
-        "name": "magic-forge-consumer",
-        "detect": { "file": "build.gradle.kts", "pattern": "id\\(\"com\\.mbseconsulting\\.magicforge\"\\)" },
+        "name": "forge-consumer",
+        "detect": { "file": "build.gradle.kts", "pattern": "id\\(\"com\\.mbseconsulting\\.forge\"\\)" },
         "publishes": true,
         "versionFile": "gradle.properties",
-        "versionLine": "^com\\.mbseconsulting\\.magicforge\\.resource\\.humanVersion=(.+)$",
+        "versionLine": "^com\\.mbseconsulting\\.forge\\.resource\\.humanVersion=(.+)$",
         "build": "./gradlew build",
         "publish": "./gradlew publishAll"
       },

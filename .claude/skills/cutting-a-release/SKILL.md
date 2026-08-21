@@ -32,8 +32,8 @@ Read `build.gradle.kts` in the repository root.
 
 | It contains | The repository is | Version lives in |
 |---|---|---|
-| a `gradlePlugin {` block | `magic-forge` | `version` in `gradle.properties` |
-| `id("com.mbseconsulting.magicforge")` | a Magic Forge consumer | `com.mbseconsulting.magicforge.resource.humanVersion` in `gradle.properties` |
+| a `gradlePlugin {` block | `forge` | `version` in `gradle.properties` |
+| `id("com.mbseconsulting.forge")` | a Forge consumer | `com.mbseconsulting.forge.resource.humanVersion` in `gradle.properties` |
 | neither, or no such file | anything else | the repository's own `docs/how-to/` page states it |
 
 The third row publishes nothing to Nexus and releases through GitHub like every other repository. Its
@@ -49,7 +49,7 @@ of this release.
 ## The five steps are one act
 
 **A published artifact and a GitHub release are one act.** Every version that reaches the artifact
-repository gets a matching tag and a GitHub release on the same day. Two versions of `magic-forge`
+repository gets a matching tag and a GitHub release on the same day. Two versions of `forge`
 reached Nexus with neither and were backfilled months later. Do not stop after step 3.
 
 ### 1. Bump the version
@@ -59,7 +59,7 @@ version goes to the snapshots repository, anything else goes to releases.
 
 ### 2. Build
 
-For `magic-forge` and for a consumer:
+For `forge` and for a consumer:
 
     ./gradlew build
 
@@ -67,7 +67,7 @@ For anything else, run what the repository's own `docs/how-to/` page states.
 
 Confirm the build is green, `spotlessCheck` included.
 
-From Magic Forge 2.1.0 onward, a consumer's `check` runs the validators, the unit tests, the
+From Forge 2.1.0 onward, a consumer's `check` runs the validators, the unit tests, the
 integration suite and the two JaCoCo tasks. A full build therefore forks a JVM against the CATIA
 Magic installation, takes a licence seat, and fails below 80% instruction coverage. A release that
 fails there is not ready to publish. A consumer on Forge 2.0.0 or earlier builds green without those
@@ -77,7 +77,7 @@ tasks, so name them as well:
 
 ### 3. Publish
 
-For `magic-forge`:
+For `forge`:
 
     ./gradlew publish
 
@@ -107,7 +107,7 @@ Every release carries three sections, in this order:
 ## What's changed
 ## Compatibility
 
-A repository publishing to Nexus — `magic-forge` and its consumers — carries two further sections
+A repository publishing to Nexus — `forge` and its consumers — carries two further sections
 after them:
 
 ## Install
