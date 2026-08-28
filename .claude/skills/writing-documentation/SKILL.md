@@ -1,6 +1,6 @@
 ---
 name: writing-documentation
-description: Places and writes a documentation page in an mbseconsulting repository, following Diataxis. Use when adding, moving, splitting or rewriting a page under docs/, when a README section outgrows the README, and whenever the user asks where a page belongs or how to document something.
+description: Places and writes a documentation page in an mbseconsulting repository, following Diataxis, and governs which names its prose may carry. Use when adding, moving, splitting or rewriting a page under docs/, when editing README.md or CLAUDE.md, when a README section outgrows the README, and whenever the user asks where a page belongs or how to document something.
 metadata:
   version: 1.0.0
   source: mbseconsulting/.conventions
@@ -40,9 +40,31 @@ makes this judgement, so getting it right here is the only time it gets made.
 One repository owns a given document. A repository that consumes the result links it and keeps no
 copy — of a page, a command list, or a design record.
 
+A repository owns its names the way it owns its documents. It names its own subject, the shared
+toolchain — `forge`, `anvil`, `.conventions` — and the tool vendor. It names nothing else: no other
+repository, no other repository's client, no sibling resource. A repository built for one client
+names that client freely, because the client owns the repository.
+
+The rule is a test rather than a list. Ask of a name: did this repository build the thing, is the
+thing the shared toolchain, is it the tool vendor, or is it this repository's own client? A name
+failing all four does not belong on the page. A list of forbidden names
+would enumerate every client the organization serves, and would then need the protection this rule
+exists to give.
+
 A file the sync reconciles is the exception rather than a violation: the generated `.claude/` files
 are copies by design, marked as generated, and their drift is reported. A copy inherited by *clone*
 has no such reconciliation. Nothing updates it, so it rots from the first change its owner makes, in
 every repository created since.
 
 Before copying anything, ask which repository owns it, and link that instead.
+
+## State what is
+
+A page states present behaviour. It records a trap, because a trap is a present hazard. It records no
+design history: the reasoning behind a change belongs to the design record, which
+`recording-a-design-doc` places under docs/superpowers/ and archives in
+`docs/superpowers/archive/`. A design record is the one page that states history, and it states it
+there.
+
+`documenting-code` carries the same rule for a KDoc, a docstring, a comment and a test name, and
+carries the test that separates a trap from a correction.

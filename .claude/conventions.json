@@ -82,7 +82,8 @@
     ".claude/skills/opening-issues-and-prs/SKILL.md",
     ".claude/skills/cutting-a-release/SKILL.md",
     ".claude/skills/writing-documentation/SKILL.md",
-    ".claude/skills/recording-a-design-doc/SKILL.md"
+    ".claude/skills/recording-a-design-doc/SKILL.md",
+    ".claude/skills/documenting-code/SKILL.md"
   ],
   "retiredFiles": [
     ".claude/CONVENTIONS.md",
