@@ -19,6 +19,42 @@ README section moves into `docs/` and leaves a link behind.
 
 `docs/README.md` indexes the guide.
 
+## CLAUDE.md
+
+`CLAUDE.md` states what an agent cannot infer from the repository and no skill can tell it. Each
+repository owns its own, so no sync reconciles it and the shape is the only shared part. It carries
+seven sections, in this order:
+
+| Section | States |
+|---|---|
+| `## What this repository is` | a sentence or two: the subject, and who depends on it |
+| `## Tech stack` | the language, the build, and the versions an agent cannot guess |
+| `## Commands` | the exact invocations — set up, build, test, publish |
+| `## Architecture` | the paths that matter and what each holds |
+| `## Organization Conventions` | what arrives from outside: the skills, the templates, the hook |
+| `## Repository Conventions` | the rules holding for this subject alone |
+| `## Pointers` | where to read further |
+
+Around 200 lines is the working limit. An agent follows roughly 150 to 200 instructions reliably, and
+a longer file buries the rules that matter among the rules that do not. Four rules hold that length:
+
+**One fact, one home.** `CLAUDE.md` carries only what no other file states. A rule a skill carries, a
+value the build file declares, a tree the README draws, a task the build plugin owns — each becomes a
+pointer, or nothing. The same fact in two files is two files to maintain, and the copy rots.
+
+**Never list the skills.** An agent receives every skill's name and description at the start of every
+session. A table of them adds nothing, and goes stale the first time the sync ships a new one.
+
+**Pointers name groups, never pages.** `docs/README.md` indexes the pages. A table naming pages needs
+a row for every page added afterwards, and nothing enforces that.
+
+**Version numbers live in the build file.** A version pinned in prose rots without a symptom. Name
+the tool and let the build file carry the number.
+
+A measurement or a trap belongs on the page answering the reader's question, with `CLAUDE.md`
+pointing at the group. A rule an agent must follow without looking anything up stays in one of the
+two Conventions sections, as one imperative line.
+
 ## Place the page by asking what the reader is doing
 
 | Group | Orientation | The reader is asking |

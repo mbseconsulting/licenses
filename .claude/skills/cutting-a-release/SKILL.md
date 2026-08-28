@@ -69,9 +69,9 @@ Confirm the build is green, `spotlessCheck` included.
 
 From Forge 2.1.0 onward, a consumer's `check` runs the validators, the unit tests, the
 integration suite and the two JaCoCo tasks. A full build therefore forks a JVM against the CATIA
-Magic installation, takes a licence seat, and fails below 80% instruction coverage. A release that
-fails there is not ready to publish. A consumer on Forge 2.0.0 or earlier builds green without those
-tasks, so name them as well:
+Magic installation and fails below 80% instruction coverage. A release that fails there is not ready
+to publish. A consumer on Forge 2.0.0 or earlier builds green without those tasks, so name them as
+well:
 
     ./gradlew build integrationTest jacocoTestReport jacocoTestCoverageVerification
 

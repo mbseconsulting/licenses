@@ -52,6 +52,18 @@
       "README.md": ["docs/README.md"],
       "CLAUDE.md": [".claude/skills/"]
     },
+    "claudeMd": {
+      "file": "CLAUDE.md",
+      "sections": [
+        "What this repository is",
+        "Tech stack",
+        "Commands",
+        "Architecture",
+        "Organization Conventions",
+        "Repository Conventions",
+        "Pointers"
+      ]
+    },
     "records": {
       "dir": "docs/superpowers",
       "index": "docs/superpowers/README.md",
